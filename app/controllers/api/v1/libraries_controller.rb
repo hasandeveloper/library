@@ -5,7 +5,6 @@ class Api::V1::LibrariesController < ApplicationController
   # GET /api/v1/libraries
   def index
     @api_v1_libraries = Api::V1::Library.all
-
     render json: @api_v1_libraries
   end
 
